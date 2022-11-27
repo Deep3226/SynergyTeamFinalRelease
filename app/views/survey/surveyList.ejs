@@ -1,0 +1,38 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %> 
+
+<div class="container pt-5">
+    <h1><%= title %></h1>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <td>Survey Title</td>
+                    <td>Start Date </td>
+                    <td>End Date </td>
+                    <td>Username</td>
+                    <td class="text-center">Action</td>
+                </tr>
+            </thead>
+            <tbody>
+                <% if (surveyList.length > 0) { %>
+                <% for(let count = 0; count < surveyList.length; count++) { %>
+                <tr>
+                    <td><%= surveyList[count].title %></td>
+                    <td><%= surveyList[count].startDate %></td>
+                    <td><%= surveyList[count].endDate %></td>
+                    <td><%= surveyList[count].createBy.displayName %></td>
+                    <td class="text-center" width="100"><a href="/survey/<%= surveyList[count].id %>" class="btn btn-outline-info btn-sm"><i class="bi bi-pen"></i> do</a></td>
+                </tr>
+                <% } %>
+                <% } else { %>
+                <tr>
+                    <td class="text-center" colspan="5">No Survey Currently</td>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+</div>
+<%- include ../partials/bottom_nav.ejs %>
+<%- include ../partials/footer.ejs %> 
