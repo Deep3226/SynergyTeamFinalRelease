@@ -1,15 +1,41 @@
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %> 
 <!-- Main Content -->
-<div style="background-color: rgb(139, 255, 139);">
-<div class="p-5 mb-4 bg-light rounded-3 text-center">
+
+<div class="p-5 mb-4 bg-light rounded-3 text-center ">
   <div class="container-fluid py-5">
     <h1 class="display-5 fw-bold">
       <p class="col-md-12 fs-4" style="background-color: rgb(255, 5, 255);">Welcome to Our Survey Site, Click the Surveys item in the Navbar to Start!</p>
     </h1>
   </div>
+  <marquee style="color: red; font-weight: bold; font-size: larger;">Surveys are open now... Please Login to make Surveys...</marquee>
+
+<br><br>
+<div class="card text-center bg-dark">
+  <div class="card-header">
+    <ul class="nav nav-pills card-header-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/survey">Surveys</a>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title" style="color:chartreuse">Synergy Team - Survey Website</h5>
+    <p class="card-text" style="color: white;">Our mission is: to deliver the best possible reliable software solutions to help our clients improve IT efficiency and business profitability.<br>
+      We strive to develop a superior Internet surveys for our users through technology, innovation, leadership and partnerships.</p>
+    <a href="/login" class="btn btn-danger">Login</a>
+  </div>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br>
+<div class="container">
+<p>
+  
+</p>
 </div>
+</div>
+
 <%- include partials/bottom_nav.ejs %>
 <%- include partials/footer.ejs %> 

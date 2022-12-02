@@ -3,7 +3,7 @@
 
 <% if (title == "Login") { %>
 
-    <main class="container">
+    <main class="container-fluid" style="background-color: lightsalmon">
         <% if(messages.length > 0) { %>
             <div class="alert alert-danger">
                 <%= messages %>
@@ -30,7 +30,11 @@
                 </form>
             </div>
         </div>
-    </main>
+
+    <div>
+        <br><br><br><br>
+    </div>
+</main>
 
 <% } else { %>
 <% } %>

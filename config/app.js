@@ -15,6 +15,7 @@ let flash = require('connect-flash');
 var indexRouter = require('../app/routes');
 let accountRouter = require('../app/routes/account');
 let surveyRouter = require('../app/routes/survey');
+let contactRouter = require('../app/routes/index')
 
 // database setup
 let mongoose = require('mongoose');
@@ -72,6 +73,7 @@ passport.deserializeUser(User.deserializeUser());
 app.use('/', indexRouter);
 app.use('/account', accountRouter);
 app.use('/survey', surveyRouter);
+app.use('/contact', contactRouter);
 
 
 // catch 404 and forward to error handler

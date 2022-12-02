@@ -4,7 +4,7 @@
 <% if (title == "Register") { %>
 
     <!--main content-->
-    <main class="container">
+    <main class="container-fluid" style="background-color: lightblue">
         <% if(messages.length > 0) { %>
             <div class="alert alert-danger">
                 <%= messages %>
@@ -38,12 +38,15 @@
                     </div>
                     <div class="mb-3 d-flex justify-content-between">
                         <a href="/" class="btn btn-outline-secondary">Cancel</a>
-                        <button class="btn btn-primary">Register</button>
+                        <button class="btn btn-dark">Register</button>
                     </div>
                 </form>
             </div>
         </div>
 
+        <div>
+            <br>
+        </div>
     </main>
 
 <% } else { %>

@@ -107,7 +107,7 @@ module.exports.processDeleteSurvey = (req, res, next) => {
 module.exports.displayResultSurveyListPage = (req, res, next) => {
     let resultList = ['a', 'b', 'c', 'd'];
 
-    res.render('account/resultList', {
+    res.render('account/resultDeatil', {
         title: 'Display Surveys',
         resultList: resultList,
         displayName: displayName(req)

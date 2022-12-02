@@ -9,6 +9,10 @@ let authController = require('../controllers/auth.server.controller')
 router.get('/', indexController.displayHomePage);
 router.get('/home', indexController.displayHomePage);
 
+router.get('/contact', function(req, res, next) {
+    res.render('contact', { title: 'Contact Us' });
+  });
+
 //displaying login Page
 router.get('/login', authController.displayLoginPage);
 

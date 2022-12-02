@@ -1,0 +1,44 @@
+
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %> 
+
+ <!-- Contact me content -->
+ 
+ <div style="background-color:rgb(185, 91, 251);">
+    <br><br>
+  <h3 style="text-align: center;"><b>Contact Synergy</b></h3>
+    <!-- Contact me form -->
+    <form class="container">
+      <div style="float:left; padding-left:310px;">
+        <label class="lefttext">Your name</label>
+        <input type="text" class="form-control" size="35" placeholder="Full Name">
+      </div>
+      <div style="float:right; padding-right:310px;">
+        <label  class="lefttext">Your email</label>
+        <input type="email" class="form-control" size="35" placeholder="xyz@example.com">
+      </div>
+      <div style="padding-left:310px; padding-right:310px;">
+        <label class="lefttext">Your message</label>
+        <textarea type="text" rows="5" cols="33" class="form-control" placeholder="Type your message here"></textarea><br>
+      </div>
+      <div class="container" style="text-align: center;">
+        <a href="/home"><button type="button" value="Submit" class="btn btn-success">Submit Form</button></a>
+      </div><br>
+      <h5 style="text-align: left; margin-left:310px;">Alternatively, you can reach out to us:-</h5>
+  
+      <!-- Contact card -->
+      <div class="card card border-success mb-3" style="margin-left:310px; margin-right:310px;">
+        <div class="card-header">
+          <h5 class="card-title">SYNERGY SURVEY GROUP</h5>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Email: <a href="mailto:deepatel099@gmail.com">synergyteam23@gmail.com</a></p>
+          <p class="card-text">Phone: +1 437-970-8186</p>
+        </div>
+      </div>
+    </form>
+    <br><br><br>
+  </div>
+
+  <%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %> 

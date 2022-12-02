@@ -9,3 +9,7 @@ function displayName(req) {
 module.exports.displayHomePage = (req, res, next) => {
     res.render('index', {title: 'Home', displayName: displayName(req)});
 }
+
+module.exports.displayContactPage = (req, res, next) => {
+    res.render('index', {title: 'Contact', displayName: displayName(req)});
+}
