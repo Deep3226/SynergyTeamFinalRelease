@@ -1,0 +1,188 @@
+
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %> 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1 style="color: coral;">About Us</h1>
+  <p>Being professional web developers and programmers. Our mission is to provide customer-centric, result-oriented, cost-competitive innovative & functional IT Solutions to our valuable global clients. 
+    <br>We stick to the following principles in delivering our mission:
+
+  <p> We understand needs and requirements of our customer and make technology to resolve the needs <br>
+    We believe to explore new opportunities that maximizes the business value, consistent growth and sustainability <br>
+    Empower our clients to respond faster and more intuitively to changing market dynamics <br>
+    Enable them to become more agile and competitive through leveraging new technologies <br>
+    Help our clients to bring great products to market in less time and at less cost<br>
+    Collaborate with our clients in their continued success.</p>
+  
+</div>
+<br><br>
+
+<h2 style="text-align:center">Our Team</h2>
+<br><br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/Picture1.jpg" alt="Deep" style="width: 100%">
+      <div class="container">
+        <h2>Deep Patel</h2>
+        <p class="title">Lead Software Engineer</p>
+        <p>Design and create computer systems and applications.</p>
+        <p style="color: blue;">dpate958@my.centennialcollege.ca</p>
+        <p><button class="button" style="color: aqua;">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/Picture4.png" alt="Fenil" style="width:100%">
+      <div class="container">
+        <h2>Fenil Parakhiya</h2>
+        <p class="title">Web Designer</p>
+        <p>Plan, create and code internet sites and web pages.</p>
+        <p style="color: blue;">pfenil@my.centennialcollege.ca</p>
+        <p><button class="button" style="color: red;">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/Picture2.jpg" alt="Solaleh" style="width:100%">
+      <div class="container">
+        <h2>Solaleh Taheri</h2>
+        <p class="title">UI/UX Designer</p>
+        <p>Create user-friendly interfaces.</p>
+        <p style="color: blue;">staheri4@my.centennialcollege.ca</p>
+        <p><button class="button" style="color: yellow;">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/Picture6.png" alt="Mittal" style="width:100%">
+      <div class="container">
+        <h2>Mittal Patel</h2>
+        <p class="title">Security Analyst</p>
+        <p>Monitor, prevent, and stop attacks on private data.</p>
+        <p style="color: blue;">pate857@my.centennialcollege.ca</p>
+        <p><button class="button" style="color: green;">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/Picture3.jpg" alt="Sheina" style="width:100%">
+      <div class="container">
+        <h2>Sheina Haboc</h2>
+        <p class="title">QA Engineer </p>
+        <p>Creates tests that identify issues with software.</p>
+        <p style="color: blue;">shaboc@my.centennialcollege.ca</p>
+        <p><button class="button" style="color: blueviolet;">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/Picture5.jpg" alt="Zohra" style="width:100%">
+      <div class="container">
+        <h2>Zohratul Zannat</h2>
+        <p class="title">Project Manager</p>
+        <p>Responsible for the planning, procurement, execution and completion of a project.</p>
+        <p style="color: blue;">zzannat@my.centennialcollege.ca</p>
+        <p><button class="button" style="color: chartreuse;">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+  <%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %> 
+
+
+

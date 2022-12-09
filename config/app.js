@@ -16,6 +16,7 @@ var indexRouter = require('../app/routes');
 let accountRouter = require('../app/routes/account');
 let surveyRouter = require('../app/routes/survey');
 let contactRouter = require('../app/routes/index')
+let aboutRouter = require('../app/routes/index')
 
 // database setup
 let mongoose = require('mongoose');
@@ -74,6 +75,7 @@ app.use('/', indexRouter);
 app.use('/account', accountRouter);
 app.use('/survey', surveyRouter);
 app.use('/contact', contactRouter);
+app.use('/about', aboutRouter);
 
 
 // catch 404 and forward to error handler
